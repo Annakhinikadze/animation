@@ -1,0 +1,191 @@
+  /* Background */
+
+  .wraper {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .background-picture{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Characters */
+
+  .cowboy {
+    z-index: 10;
+    position: absolute;
+    width: 180px;
+    top:460px;
+    transform: translate(0);
+    transition-delay: 60s;
+    animation: cowboy 8s infinite;
+    transition: all;
+    animation-timing-function: linear;  
+    
+  }
+
+  @keyframes cowboy {
+    from {left: 0px; ;}
+    to {left: 350px;}
+    
+  }
+ 
+  
+
+
+  .cowboy2 {
+    z-index: 10;
+    position: absolute;
+    width: 180px;
+    left: 750px;
+    top:460px;
+  }
+    
+   
+  .shopowner {
+
+    z-index: 8;
+    position: absolute;
+    width: 100px;
+    left: 590px;
+    top:480px;
+    animation: shopowner 6s infinite;
+    transition: all;
+    animation-timing-function: linear;
+   
+  }
+
+
+
+
+/* Additional objects */
+
+  .rollingdust {
+
+    z-index: 9;
+    position: absolute;
+    width: 100px;
+    left: 0%;
+    top:500px;
+    transform: translate(0);
+    animation: rollingdust 7s infinite;
+    transition: all;
+    animation-timing-function: linear;
+    
+  }
+
+  @keyframes rollingdust {
+    from {left: 20px; transform: rotate(20deg);}
+    to {left: 1150px; transform: rotate(360deg)}
+    
+  }
+
+  .rollingdust2 {
+
+    z-index: 11;
+    position: absolute;
+    width: 100px;
+    left: 0%;
+    top:540px;
+    transform: translate(0);
+    transition-delay: 60s;
+    animation: rollingdust2 8s infinite;
+    transition: all;
+    animation-timing-function: linear;  
+    
+  }
+
+  @keyframes rollingdust2 {
+    from {left: 0px; transform: rotate(20deg);}
+    to {left: 1190px; transform: rotate(360deg)}
+    
+  }
+
+  .glowing-tornado {
+
+    z-index: 10;
+    position: absolute;
+    width: 110px;
+    left: 400px;
+    top: 260px;
+    transform: translate(0);
+    animation: glowing-tornado 3s infinite;
+    transition: all;
+    animation-timing-function: linear;
+
+  }
+
+  @keyframes glowing-tornado {
+    from {       
+        transform: rotate(0deg)
+                   translate(-5px)
+                   rotate(0deg);
+    }
+    to {       
+        transform: rotate(360deg)
+                   translate(-5px) 
+                   rotate(-360deg);
+    }
+ }
+
+ .tornado {
+
+    z-index: 10;
+    position: absolute;
+    width: 50px;
+    left: 600px;
+    top: 580px;
+    transform: translate(0);
+    animation: tornado 3s infinite;
+    transition: all;
+    animation-timing-function: linear;
+
+  }
+
+  @keyframes tornado {
+    from {       
+        transform: rotate(0deg)
+                   translate(-5px)
+                   rotate(0deg);
+    }
+    to {       
+        transform: rotate(360deg)
+                   translate(-5px) 
+                   rotate(-360deg);
+    }
+ }
+
+
+ .airplane {
+   
+        position: absolute;
+        left: 0;
+        top: 5%;
+        width: 200px;
+        animation: airplane 4s forwards, falling-airplane 3s linear 2s forwards;
+        
+ }
+
+ @keyframes airplane {
+         0% {left: 50%}
+        100% {left: 10%}
+      
+}
+
+@keyframes falling-airplane {
+        0% {transform: translateX(0);}
+        50% {left: 5%; transform: rotate(-45deg);}
+        100% {transform: translateY(150px) rotate(-90deg);}
+}
+
+/* audio test */
+
+  .audio {
+    position: absolute;
+    left: 0%;
+    top:0%;
+  }
