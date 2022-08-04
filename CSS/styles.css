@@ -37,14 +37,39 @@
   
 
 
+  .flip {
+    animation-name: flip;
+    transition-delay: 8s;
+  }
+  
+
+
   .cowboy2 {
     z-index: 10;
     position: absolute;
     width: 180px;
     left: 750px;
     top:460px;
-  }
+    display: block;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     
+  }
+
+  @keyframes flip {
+    0% {
+      transform: perspective(400px) scaleX(1);
+      
+  }
+
+  100% {
+      transform: perspective(400px) scaleX(-1);
+     
+  }
+  }
+        
    
   .shopowner {
 
