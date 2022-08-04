@@ -222,6 +222,6 @@
 
   .audio {
     position: absolute;
-    left: 0%;
-    top:0%;
+    right: 100px;
+    top: 100px;;
   }
